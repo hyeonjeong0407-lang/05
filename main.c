@@ -9,11 +9,8 @@ int main(int argc, char *argv[]) {
 	printf(" input an integer : ");
 	scanf("%d",&a);
 	
-	if (a>0)
-		printf("╬Г╪Жют╢о╢ы.\n");
-	else if (a < 0)
-		printf("ю╫╪Жют╢о╢ы.\n");
+	if (a>=0)
+		printf("Л═┬К▄⌠Й╟▓Л²─ %d Л·┘К▀┬К▀╓.\n", a);
 	else
-		printf("0ют╢о╢ы.\n");
-	return 0;
+		printf("Л═┬К▄⌠Й╟▓Л²─ %d Л·┘К▀┬К▀╓.\n", -a);
 }
