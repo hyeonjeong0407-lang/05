@@ -5,12 +5,17 @@
 
 int main(int argc, char *argv[]) {
 	int a;
+	int sum=0;
+	int i;
 	
-	printf(" input an integer : ");
-	scanf("%d",&a);
+	printf("input a number : ");
+	scanf("%d", &a);
 	
-	if (a>=0)
-		printf("절댓값은 %d 입니다.\n", a);
-	else
-		printf("절댓값은 %d 입니다.\n", -a);
+	
+	for (i=1; i<=a; i++)
+		sum= sum+i;
+		
+	printf("the result is %d", sum);
+	
+	return 0;
 }
